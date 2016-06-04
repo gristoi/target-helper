@@ -12,6 +12,9 @@
 		3C7045211CE9E054000734D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C70451F1CE9E054000734D9 /* Main.storyboard */; };
 		3C7045231CE9E054000734D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7045221CE9E054000734D9 /* Assets.xcassets */; };
 		3C7045261CE9E054000734D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7045241CE9E054000734D9 /* LaunchScreen.storyboard */; };
+		3C70452E1CE9E3D4000734D9 /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C70452D1CE9E3D4000734D9 /* CustomOverlayView.swift */; };
+		3C7045351CE9E7D9000734D9 /* CustomOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7045331CE9E7D9000734D9 /* CustomOverlayViewController.swift */; };
+		3C7045361CE9E7D9000734D9 /* CustomOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7045341CE9E7D9000734D9 /* CustomOverlayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3C7045221CE9E054000734D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7045251CE9E054000734D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C7045271CE9E054000734D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C70452D1CE9E3D4000734D9 /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		3C7045331CE9E7D9000734D9 /* CustomOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayViewController.swift; sourceTree = "<group>"; };
+		3C7045341CE9E7D9000734D9 /* CustomOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlayViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				3C7045221CE9E054000734D9 /* Assets.xcassets */,
 				3C7045241CE9E054000734D9 /* LaunchScreen.storyboard */,
 				3C7045271CE9E054000734D9 /* Info.plist */,
+				3C70452D1CE9E3D4000734D9 /* CustomOverlayView.swift */,
+				3C7045331CE9E7D9000734D9 /* CustomOverlayViewController.swift */,
+				3C7045341CE9E7D9000734D9 /* CustomOverlayViewController.xib */,
 			);
 			path = "Target Helper";
 			sourceTree = "<group>";
@@ -122,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7045361CE9E7D9000734D9 /* CustomOverlayViewController.xib in Resources */,
 				3C7045261CE9E054000734D9 /* LaunchScreen.storyboard in Resources */,
 				3C7045231CE9E054000734D9 /* Assets.xcassets in Resources */,
 				3C7045211CE9E054000734D9 /* Main.storyboard in Resources */,
@@ -135,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7045351CE9E7D9000734D9 /* CustomOverlayViewController.swift in Sources */,
 				3C70451E1CE9E054000734D9 /* ViewController.swift in Sources */,
 				3C70451C1CE9E054000734D9 /* AppDelegate.swift in Sources */,
+				3C70452E1CE9E3D4000734D9 /* CustomOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
