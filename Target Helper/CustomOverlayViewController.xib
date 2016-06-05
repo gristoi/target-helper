@@ -15,10 +15,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-1M-SwL">
-                    <rect key="frame" x="279" y="289" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ix2-1M-SwL">
+                    <rect key="frame" x="8" y="8" width="313" height="137"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="137" id="5nb-h6-Kxb"/>
+                        <constraint firstAttribute="width" constant="313" id="b3n-1k-pLG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="target" translatesAutoresizingMaskIntoConstraints="NO" id="3vW-QR-o5J">
@@ -31,10 +35,10 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ix2-1M-SwL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PwT-OW-KFu"/>
+                <constraint firstItem="ix2-1M-SwL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="5Vj-7u-GX4"/>
                 <constraint firstItem="3vW-QR-o5J" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qmd-jB-o9D"/>
                 <constraint firstItem="3vW-QR-o5J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iV5-Wl-u9w"/>
-                <constraint firstItem="ix2-1M-SwL" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qhX-BK-A2c"/>
+                <constraint firstItem="ix2-1M-SwL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="lbE-1b-SWf"/>
             </constraints>
             <connections>
                 <outlet property="cameraLabel" destination="ix2-1M-SwL" id="8KQ-UC-IYf"/>
