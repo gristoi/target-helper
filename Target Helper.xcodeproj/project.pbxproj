@@ -15,6 +15,9 @@
 		3C70452E1CE9E3D4000734D9 /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C70452D1CE9E3D4000734D9 /* CustomOverlayView.swift */; };
 		3C7045351CE9E7D9000734D9 /* CustomOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7045331CE9E7D9000734D9 /* CustomOverlayViewController.swift */; };
 		3C7045361CE9E7D9000734D9 /* CustomOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7045341CE9E7D9000734D9 /* CustomOverlayViewController.xib */; };
+		44B87AD71D06144F007DF854 /* KeyMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B87AD61D06144F007DF854 /* KeyMapView.swift */; };
+		44B87AD91D061475007DF854 /* KeyMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B87AD81D061475007DF854 /* KeyMapView.xib */; };
+		44B87ADB1D0619A5007DF854 /* ScoreCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B87ADA1D0619A5007DF854 /* ScoreCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		3C70452D1CE9E3D4000734D9 /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
 		3C7045331CE9E7D9000734D9 /* CustomOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayViewController.swift; sourceTree = "<group>"; };
 		3C7045341CE9E7D9000734D9 /* CustomOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlayViewController.xib; sourceTree = "<group>"; };
+		44B87AD61D06144F007DF854 /* KeyMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyMapView.swift; sourceTree = "<group>"; };
+		44B87AD81D061475007DF854 /* KeyMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyMapView.xib; sourceTree = "<group>"; };
+		44B87ADA1D0619A5007DF854 /* ScoreCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				3C70452D1CE9E3D4000734D9 /* CustomOverlayView.swift */,
 				3C7045331CE9E7D9000734D9 /* CustomOverlayViewController.swift */,
 				3C7045341CE9E7D9000734D9 /* CustomOverlayViewController.xib */,
+				44B87AD61D06144F007DF854 /* KeyMapView.swift */,
+				44B87AD81D061475007DF854 /* KeyMapView.xib */,
+				44B87ADA1D0619A5007DF854 /* ScoreCardViewController.swift */,
 			);
 			path = "Target Helper";
 			sourceTree = "<group>";
@@ -132,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7045361CE9E7D9000734D9 /* CustomOverlayViewController.xib in Resources */,
+				44B87AD91D061475007DF854 /* KeyMapView.xib in Resources */,
 				3C7045261CE9E054000734D9 /* LaunchScreen.storyboard in Resources */,
 				3C7045231CE9E054000734D9 /* Assets.xcassets in Resources */,
 				3C7045211CE9E054000734D9 /* Main.storyboard in Resources */,
@@ -146,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7045351CE9E7D9000734D9 /* CustomOverlayViewController.swift in Sources */,
+				44B87ADB1D0619A5007DF854 /* ScoreCardViewController.swift in Sources */,
 				3C70451E1CE9E054000734D9 /* ViewController.swift in Sources */,
 				3C70451C1CE9E054000734D9 /* AppDelegate.swift in Sources */,
+				44B87AD71D06144F007DF854 /* KeyMapView.swift in Sources */,
 				3C70452E1CE9E3D4000734D9 /* CustomOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +312,7 @@
 				3C70452C1CE9E054000734D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

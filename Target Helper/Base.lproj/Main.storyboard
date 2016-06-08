@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ITn-HG-096">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -40,6 +41,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="773" y="413"/>
+        </scene>
+        <!--Score Card View Controller-->
+        <scene sceneID="o1r-T9-n9f">
+            <objects>
+                <viewController id="ITn-HG-096" customClass="ScoreCardViewController" customModule="Target_Helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nzg-md-ceZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="01P-Yq-OA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vGD-PD-g5k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bn-Ql-Rei">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="MR7-dg-uGS"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2Pq-el-N6b">
+                                <rect key="frame" x="20" y="63" width="560" height="529"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOO-Ep-Q32">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="529"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="01P-Yq-OA0" firstAttribute="top" secondItem="2Pq-el-N6b" secondAttribute="bottom" constant="8" id="CRR-q9-S6J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Bn-Ql-Rei" secondAttribute="trailing" constant="-20" id="CYm-pi-arr"/>
+                            <constraint firstItem="2Pq-el-N6b" firstAttribute="top" secondItem="0Bn-Ql-Rei" secondAttribute="bottom" constant="8" id="OYv-TB-FRm"/>
+                            <constraint firstItem="2Pq-el-N6b" firstAttribute="leading" secondItem="vGD-PD-g5k" secondAttribute="leadingMargin" id="Qjc-Tt-ju9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Pq-el-N6b" secondAttribute="trailing" id="Zox-ES-C8N"/>
+                            <constraint firstItem="0Bn-Ql-Rei" firstAttribute="leading" secondItem="vGD-PD-g5k" secondAttribute="leadingMargin" constant="-20" id="ihh-Ff-oVl"/>
+                            <constraint firstItem="0Bn-Ql-Rei" firstAttribute="top" secondItem="vGD-PD-g5k" secondAttribute="topMargin" id="tFW-mL-AsX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scorecardStackView" destination="2Pq-el-N6b" id="wUR-xR-DBH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wm0-SS-v6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="413"/>
         </scene>
     </scenes>
 </document>
